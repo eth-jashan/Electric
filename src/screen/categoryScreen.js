@@ -111,7 +111,12 @@ const CategoryScreen  = ({navigation}) => {
         
         <View style={{position:'absolute', bottom:Dimensions.get('window').width/2,  width:Dimensions.get('window').width}}>
         <Animated.View style={{transform: [{translateX:transition}], left:Dimensions.get('window').width}}>
-        <TouchableOpacity onPress={()=>navigation.navigate('CarProfile')}>
+        <TouchableOpacity onPress={()=>navigation.navigate('CarList')}>
+           <View style={{ padding:10, width:Dimensions.get('window').width*0.55, backgroundColor:'#1ec0af', borderRadius:20, alignSelf:'center'}}>
+            <Text style={styles.textStyle2}>Take A Tour</Text>
+           </View>
+           </TouchableOpacity>
+           <TouchableOpacity onPress={()=>navigation.navigate('CarProfile')}>
            <View style={{ padding:10, width:Dimensions.get('window').width*0.55, backgroundColor:'#1ec0af', borderRadius:20, alignSelf:'center'}}>
             <Text style={styles.textStyle2}>Take A Tour</Text>
            </View>
