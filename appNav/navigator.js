@@ -22,6 +22,7 @@ const Appnav = () => {
         <NavigationContainer>
 
             <vehicleStack.Navigator>
+            <vehicleStack.Screen name = 'Pump' component={pumpLocation} options={{header:()=>{return false}}} />
             <vehicleStack.Screen name = 'Category' component={CategoryScreen2} options={{header:()=>{return false}}} />
             <vehicleStack.Screen name = 'CarList' component={CarListScreen} options={{header:()=>{return false}}} />
             <vehicleStack.Screen name = 'CarProfile' component={CarProfile} options={{header:()=>{return false}}} />            
